@@ -1,7 +1,7 @@
 ---
 title: "README"
 author: "jsg"
-date: "Last compiled on `r format(Sys.time(), '%d %B, %Y %H:%M')`"
+date: "Last compiled on 02 July, 2022 12:47"
 output:
   html_document:
     toc: true
@@ -234,7 +234,8 @@ If this file is open in R, you can select the green triangle button (play
 icon) to run the current chunk. Otherwise you can copy and paste it into R. 
 Note you may also need to install the usethis library first.
 
-```{r, eval=F}
+
+```r
 library(usethis)
 usethis::create_github_token()
 ```
@@ -246,7 +247,8 @@ Then scroll to the bottom, and select **Generate Token**. Save the token somewhe
 chunk.  Select 3, then paste in the 
 token you just generated. Again, you may need to install the gitcreds package.
 
-```{r, eval=FALSE}
+
+```r
 library(gitcreds)
 gitcreds_set()
 ```

@@ -1,7 +1,7 @@
 ---
 title: "2. Estimates and ggplot2"
 author: "jsg"
-date: "Last compiled on `r format(Sys.time(), '%d %B, %Y %H:%M')`"
+date: "Last compiled on 02 July, 2022 12:42"
 output:
   html_document:
     toc: true
@@ -9,11 +9,6 @@ output:
     keep_md: true
     self_contained: true
 ---
-
-Before doing this, review the **Estimation and Probability** lecture set slides from 
-https://sites.google.com/view/biostats/lessons/estimation-and-probablity and
-the  **2_estimation_lecture.R** script in the lecture_files folder of the
-[CUNY-BioStats github repository](https://github.com/jsgosnell/CUNY-BioStats).
 
 
 Remember you should
@@ -28,7 +23,8 @@ pressing *Ctrl+Alt+I* to answer the questions!
 ## Using ggplot2
 Let’s return to the mammal sleep dataset that we left off with last week. 
 Load the dataset
-```{r}
+
+```r
 sleep <- read.csv("https://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/master/datasets/sleep.csv", stringsAsFactors = T)
 #need to use stringsAsFactors to make characters read in as factors
 ```

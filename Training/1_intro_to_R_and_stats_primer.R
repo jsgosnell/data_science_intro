@@ -1,6 +1,8 @@
 ##INTRODUCTION TO R####
+##JSG, 7/2/22
+
 #this is a broad introduction to how R works and what it can do
-#we'll return to individual topics in later classes (both theory and practice)
+#we'll return to individual topics in later sessions (both theory and practice)
 
 #Things to know about R (General information):####
 
@@ -27,6 +29,9 @@
 # to read.". His guide is @ 
 # http://adv-r.had.co.nz/Style.html
 # and I recommend using it
+
+# We'll only use scripts this once. I'll introduce you to Rmd files soon, which
+# are a much better way of combining text (prose) and code in literate programming.
 
 # R is an object-based language.  All that means is you can define objects (x=2,
 # or a list, or a matrix) and then use x for your calculations.  Sometimes it
