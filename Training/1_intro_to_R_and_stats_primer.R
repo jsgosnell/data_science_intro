@@ -248,10 +248,14 @@ file
 
 #which is then read by the read.csv function
 
-my_dataset <- read.csv(file)
+my_dataset <- read.csv(file, stringsAsFactors = T)
+
+# Since ~2020 you need to as StringsAsFactors = T to read in characters as factors
+# (what we typically want)
 
 #you can also read in data from a website holding a csv (we'll do this often in class)
-australia_athlete_data <- read.table("http://www.statsci.org/data/oz/ais.txt", header = T)
+australia_athlete_data <- read.table("http://www.statsci.org/data/oz/ais.txt", header = T,
+                                     stringsAsFactors = T)
 
 # and thats it.  however, this is not a great way to grab data (or automate code).
 #you can also put your path in directly, e.g., 

@@ -43,8 +43,10 @@ videos are at :
   * [Downloading R](https://www.youtube.com/watch?v=S8GrH0MeWkM&list=PLmnVhyQ-20EUFRmsjpYTyB5--zyolr6-o&index=2){target="_blank"}
   * [Downloading Rstudio](https://www.youtube.com/watch?v=pklpCOmK9Cg&list=PLmnVhyQ-20EUFRmsjpYTyB5--zyolr6-o&index=3){target="_blank"}
   * [Making a Rstudio cloud account](https://www.youtube.com/watch?v=ojqNuBRR0y0&list=PLmnVhyQ-20EUFRmsjpYTyB5--zyolr6-o&index=5){target="_blank"}
-* Join the github classroom we'll be using for our session ().   When you visit
-the page it will ask you to connect or create a github repository. You can use 
+* Join the github classroom we'll be using for our sessions
+  * https://classroom.github.com/a/QqtpUpNj
+  * When you visit the page it will ask you to connect or create a github 
+  repository. You can use 
 any name (be anonymous or not) that you want.  This is a free process.
 
 ### Optional (get a head start if you want)
@@ -284,6 +286,6 @@ use these to leave notes that you can ignore.
 ADD HERE IF YOU CAN @TEACHER IN COMMIT FOR HELP!)
 
 
-Need help? See videos below or contact me (stephen.gosnell@baruch.cuny.edu):
+Need help? Contact me (stephen.gosnell@baruch.cuny.edu):
 
 

@@ -28,7 +28,7 @@ sleep <- read.csv("https://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/mas
 #need to use stringsAsFactors to make characters read in as factors
 ```
 Last time you used the built-in plot functions to do some plots. Let’s replace 
-those with ggplot2 and do some more.
+those with ggplot2 and do some practice.
 
 1. First plot how TotalSleep is explained by BrainWt (remember the issues with 
 the data).  Use ggplot2 to plot the relationship.
@@ -50,33 +50,3 @@ sleep changes with
 * Primate (relabeled as yes/no as Primate/Non-Primate; note 
 there are multiple ways to do this!) – use a 95% confidence interval for the bar
 * Predation risk (as a factor!) – use 1 standard error for the bar. Note the difference!
-
-## Estimates and Certainty Concepts
-
-5. What does a 95% confidence interval mean?
-
-6. To make sure you understand the ideas of sampling, confidence intervals, and the central limit theorem, review the visualizations produced by UBC @ http://www.zoology.ubc.ca/~whitlock/Kingfisher/CLT.htm.  
-
-7. For this question you'll need the 
-central_limit_theorem.R script from the 
-[code_examples folder](https://github.com/jsgosnell/CUNY-BioStats/tree/master/code_examples).
-
-To show you how well the central limit theorem (and functions) works, you can also examine 6
-distributions that display traits we described at the beginning of lab using the
-central_limit_theorem.R script from the Examples folder on github (or download here);
-you may need to download the VGAM package.  Source it and and then use Rstudio to review the plots
-it produces. Decide what characteristics (truncation, skewness, kurtosis, sample size) speed vs.
-slow the convergence of the sample mean upon normality.  The reviewed distributions are:
-
-* Normal(Z) (0,1)  {no Kurtosis / no skewness / no truncation}
-* Double exponential (0,2) {high Kurtosis / no skewness / no truncation}
-* Uniform(0,1) {moderate Kurtosis / no skewness / double truncation}
-* Exponential(1,1)  {high asymmetric Kurtosis / high skewness / single truncation} 
-* Chi-square(df=4) {low Kurtosis / moderate skewness / single truncation} 
-* Binomial distribution (p=.7) {discrete distribution]
-
-For this question, its easiest to just source the main file and see what happens.
-When you source a script, it is run in R without showing any console output
-(but graphs and objects are still produced!).  Try 
-`source("https://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/master/code_examples/central_limit_theorem.R")`.  
-You'll also need to have the VGAM library installed.
