@@ -1,7 +1,7 @@
 ---
 title: "2. Intro to Rmd files and literate programming"
 author: "stephen's example"
-date: "Last compiled on 02 July, 2022 12:41"
+date: "Last compiled on 11 July, 2022 13:38"
 output:
   html_document:
     toc: true
@@ -12,7 +12,19 @@ output:
 ---
 
 Rmd files differ from R files in that they combine regular text with code chunks.
-This makes it easier to produce a range of document.  You set the output in 
+This is a code chunk
+
+
+```r
+print("this is a chunk")
+```
+
+```
+## [1] "this is a chunk"
+```
+
+Code chunks combine code with output. When combined with regular text/prose, 
+this makes it easier to produce a range of document.  You set the output in 
 the YAML header (the stuff between the 3 dashes you see at top of this document).
 
 After you write the file, you **Knit** it to turn the Rmd file into the selected 
@@ -30,6 +42,26 @@ so if everything works a preview of a webpage like document should appear. The f
 also produces a github friendly .md file. **This means you should only edit the 
 Rmd file (leave the md and output files alone! They are automatically produced
 any changes you make there will be overwritten by your next knit)**.  
+
+When you **Knit** a file, it runs in a totally new R instance. this means anything
+you only added in your instance (like working in the console) won't be available.
+In other words, its the best way to see what a "new" user gets when they use your
+code.
+
+however, you don't have to knit the file every time. if you just want to see output,
+note you can press the green button next to an R chunk.
+
+![The green arrows just runs the chunk in the console and shows the output](https://lh3.googleusercontent.com/pw/AM-JKLUYgHbhk7YzhXdAZwV-fvLFlnOc4IcCMwt6U21qsHP7sXcjQ5xDL86NewZo2THSGAveP0Y1cL2PP4yysUTLn4N6iXoO6B1h_8RtAlqmNONY2W5V_j_4hqtQ8d3GhroTNJewT3oEqSVA-Vjh4IkDRqE-pw=w784-h73-no?authuser=0)
+
+
+
+```r
+print("this is a chunk")
+```
+
+```
+## [1] "this is a chunk"
+```
 
 Now we'll start changing the file to show you how rmarkdown works.
 First, amend the file by replacing the **NAME** and **DATE** spots in the header
@@ -57,8 +89,11 @@ can also get more help with [this video](https://www.youtube.com/watch?v=shs95EH
 
 ### R subtleties and functions
 
-1. Let x be defined by
+1. Let x be defined by 
 
+[comment]:(This is an comment in Rmarkdown. It won't be seen the processed file. 
+Remember you can press the green button to see the output in the console without
+knitting!)
 
 
 ```r
@@ -151,7 +186,7 @@ NOTE YOU CAN ADD A PLOT TO THE DOCUMENT TOO! AMEND THE BELOW AS NEEDED.
 plot(cars)
 ```
 
-![](2_Intro_to_Rmd_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](2_Intro_to_Rmd_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 7.  The **sleep** dataset begs to have a linear model fit for it. Let’s consider. First plot how *TotalSleep* is explained by *BrainWt*. Are there any issues with the data? Exclude any outlier and fit a linear model to obtain the p-value for the model (hint: summary()).  What does this imply?  
 
