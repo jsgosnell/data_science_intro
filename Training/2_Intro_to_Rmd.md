@@ -1,7 +1,7 @@
 ---
 title: "2. Intro to Rmd files and literate programming"
 author: "stephen's example"
-date: "Last compiled on 11 July, 2022 13:38"
+date: "Last compiled on 12 July, 2022 10:33"
 output:
   html_document:
     toc: true
@@ -24,7 +24,7 @@ print("this is a chunk")
 ```
 
 Code chunks combine code with output. When combined with regular text/prose, 
-this makes it easier to produce a range of document.  You set the output in 
+this makes it easier to produce a range of documents.  You set the output in 
 the YAML header (the stuff between the 3 dashes you see at top of this document).
 
 After you write the file, you **Knit** it to turn the Rmd file into the selected 
