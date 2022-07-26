@@ -1,7 +1,7 @@
 ---
 title: "2. Intro to Rmd files and literate programming"
 author: "stephen's example"
-date: "Last compiled on 21 July, 2022 10:14"
+date: "Last compiled on 26 July, 2022 10:01"
 output:
   html_document:
     toc: true
@@ -246,7 +246,7 @@ ADD ANY R CHUNKS YOU USED TO COMPLETE THE TASK.
 
 
 ```r
-names(sleep)[names(sleep) %in% "BodyWt"] = "Body_weight"
+names(sleep)[names(sleep) %in% "BodyWt"] <- "Body_weight"
 ```
 
 
@@ -255,11 +255,13 @@ names(sleep)[names(sleep) %in% "BodyWt"] = "Body_weight"
 Note, as of early 2020 R no longer reads in strings as factors! This means the 
 Primate column, which is full of "Yes"s and "No"s, reads in as words and R doesn't
 know how to plot them. There are many ways to handle this. You can modify the 
-read.csv command (add  stringsAsFactors = T option), eg*
+read.csv command (add  stringsAsFactors = T option), eg
+
 
 ```r
 sleep <- read.csv("http://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/master/datasets/sleep.csv", stringsAsFactors = T)
 ```
+
 If you do this, you'll need to rechange anything you previously updated to the
 object (like renaming the BodyWt column).
 
@@ -312,6 +314,7 @@ ENTER ANSWERS HERE. ADD ANY R CHUNKS YOU USED TO FIND THE ANSWER.
 
 *First look for outliers (before fitting a model)*
 
+
 ```r
 plot(TotalSleep ~ BrainWt, sleep)
 ```
@@ -348,6 +351,7 @@ summary(sleep_fit)
 ## Multiple R-squared:  0.2224,	Adjusted R-squared:  0.2078 
 ## F-statistic: 15.16 on 1 and 53 DF,  p-value: 0.0002782
 ```
+
 *We see a significant (p <.05, don't worry, we'll see this later) relationship 
 between BrainWt and TotalSleep, and it appears that TotalSleep decreases as BrainWt
 increases (note the negative estimate). We can visualize this using*

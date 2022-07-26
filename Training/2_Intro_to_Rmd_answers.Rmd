@@ -175,7 +175,7 @@ see how to put R output inline (instead of in chunks).*
 ADD ANY R CHUNKS YOU USED TO COMPLETE THE TASK.
 
 ```{r}
-names(sleep)[names(sleep) %in% "BodyWt"] = "Body_weight"
+names(sleep)[names(sleep) %in% "BodyWt"] <- "Body_weight"
 ```
 
 
@@ -184,10 +184,12 @@ names(sleep)[names(sleep) %in% "BodyWt"] = "Body_weight"
 Note, as of early 2020 R no longer reads in strings as factors! This means the 
 Primate column, which is full of "Yes"s and "No"s, reads in as words and R doesn't
 know how to plot them. There are many ways to handle this. You can modify the 
-read.csv command (add  stringsAsFactors = T option), eg*
+read.csv command (add  stringsAsFactors = T option), eg
+
 ```{r, eval=F}
 sleep <- read.csv("http://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/master/datasets/sleep.csv", stringsAsFactors = T)
 ```
+
 If you do this, you'll need to rechange anything you previously updated to the
 object (like renaming the BodyWt column).
 
@@ -230,6 +232,7 @@ plot(TotalSleep ~ factor(Primate), sleep, main = "Variance in sleep differs betw
 ENTER ANSWERS HERE. ADD ANY R CHUNKS YOU USED TO FIND THE ANSWER.
 
 *First look for outliers (before fitting a model)*
+
 ```{r}
 plot(TotalSleep ~ BrainWt, sleep)
 ```
@@ -240,6 +243,7 @@ plot(TotalSleep ~ BrainWt, sleep)
 sleep_fit <- lm(TotalSleep ~ BrainWt, sleep[sleep$BrainWt<1000,])
 summary(sleep_fit)
 ```
+
 *We see a significant (p <.05, don't worry, we'll see this later) relationship 
 between BrainWt and TotalSleep, and it appears that TotalSleep decreases as BrainWt
 increases (note the negative estimate). We can visualize this using*
