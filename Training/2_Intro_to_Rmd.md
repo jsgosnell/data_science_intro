@@ -1,7 +1,7 @@
 ---
 title: "2. Intro to Rmd files and literate programming"
 author: "stephen's example"
-date: "Last compiled on 12 July, 2022 10:33"
+date: "Last compiled on 29 July, 2022 10:47"
 output:
   html_document:
     toc: true
@@ -97,7 +97,7 @@ knitting!)
 
 
 ```r
-x <- 1:10
+x <- 5:15
 ```
 
 Try executing this chunk (in R studio, not the webview) by clicking the *Run* 
@@ -120,9 +120,9 @@ The : means FILL THIS IN.
 
 * length(x)
 * max(x)
-* x[x < 5]
+* x[x < 10]
 * x^2
-* x[ x < 8 & x > 2]
+* x[ x < 12 & x > 7]
 
 INSERT AN R CHUNK HERE AND RUN EACH OF THESE COMMANDS.  Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*. Then state what
 each of these does.
