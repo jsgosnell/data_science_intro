@@ -1,7 +1,7 @@
 ---
 title: "README"
 author: "jsg"
-date: "Last compiled on 26 June, 2023 22:28"
+date: "Last compiled on 26 June, 2023 22:37"
 output:
   html_document:
     toc: true
@@ -27,6 +27,8 @@ To prepare for our first session
 * Download/save this presentation that we'll work through 
   * https://docs.google.com/presentation/d/1WK3d1Exmsgj_Qi83mT2Pe7xthQzewfvSuOJeLyVkBmw/edit?usp=sharing
 * Watch [this video](https://www.youtube.com/watch?v=sSD84bIkWDw&t=1s){target="_blank"}
+* Do this survey so I know where we are starting
+  * https://forms.gle/7mYCnbRPFejrnpuXA
 
 ## Tech stuff
 
