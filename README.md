@@ -1,7 +1,7 @@
 ---
 title: "README"
 author: "jsg"
-date: "Last compiled on 02 July, 2022 12:59"
+date: "Last compiled on 26 June, 2023 22:22"
 output:
   html_document:
     toc: true
@@ -19,7 +19,6 @@ research
 * introduce some of you to tools that are commonly used in the field (and will 
 add to your CV)
 * prepare you to analyze your data
-
 
 To prepare for our first session
 
@@ -84,18 +83,6 @@ web url (or click the copy icon). Input that into the field asking for the URL
 of your github repository. 
 
 Note you may need to enter your github username and password to create the repository.
-
-Before continuing,  I recommend turning down the computer usage. Free rstudiocloud 
-accounts only allow so much usage, but that depends on how much power you allocate
-to a project. To do this, click on the RAM icon in the upper left corner, select 
-resources, and move all sliders to the far left.
-
-![In Rstudio cloud, move all sliders to the left to give you more actual hours](https://lh3.googleusercontent.com/pw/AM-JKLVGtN01ndQcB622ioe8eLk0vcbTgdlE2QXG8L_q0scnCBEXjhn4Kvik3Lqm7BoiI11p0YaTYq5NlWaXa303IVly68oNYqfJoQWoNWnAyWUyo5fRcrQ39lrvFBdWP1J-qGd84xGNFN-U1aGgfF5ac6FsAA=w329-h734-no?authuser=0)
-
-If you end up doing something more complex, you can increase allocated power to 
-speed everything up. For most class code, however, low power should be fine.)  If
-you make changes here, Rstudio.cloud will need to relaunch to apply them. Let it do
-that then keep working.
 
 The next screen will bring you to a "normal" RStudio screen.  Continue to the 
 [**Now we can actually work in R**](## Now we can actually work in R and markdown) 
