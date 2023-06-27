@@ -1,7 +1,7 @@
 ---
 title: "README"
 author: "jsg"
-date: "Last compiled on 26 June, 2023 22:22"
+date: "Last compiled on 26 June, 2023 22:28"
 output:
   html_document:
     toc: true
@@ -43,7 +43,7 @@ videos are at :
   * [Downloading Rstudio](https://www.youtube.com/watch?v=pklpCOmK9Cg&list=PLmnVhyQ-20EUFRmsjpYTyB5--zyolr6-o&index=3){target="_blank"}
   * [Making a Rstudio cloud account](https://www.youtube.com/watch?v=ojqNuBRR0y0&list=PLmnVhyQ-20EUFRmsjpYTyB5--zyolr6-o&index=5){target="_blank"}
 * Join the github classroom we'll be using for our sessions
-  * https://classroom.github.com/a/QqtpUpNj
+  * https://classroom.github.com/a/D7Pmx_95
   * When you visit the page it will ask you to connect or create a github 
   repository. You can use 
 any name (be anonymous or not) that you want.  This is a free process.
